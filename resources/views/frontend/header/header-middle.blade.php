@@ -51,7 +51,7 @@
 
         <a href="login.html" class="header-icon" title="login"><i class="icon-user-2"></i></a>
 
-        <a href="wishlist.html" class="header-icon" title="wishlist"><i class="icon-wishlist-2"></i></a>
+        <a href="{{ url('/wishlists/index') }}" class="header-icon" title="wishlist"><i class="icon-wishlist-2"></i></a>
 
         <div class="dropdown cart-dropdown">
             <a href="#" title="Cart" class="dropdown-toggle dropdown-arrow cart-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
@@ -144,9 +144,9 @@
                     <!-- End .dropdown-cart-total -->
 
                     <div class="dropdown-cart-action">
-                        <a href="cart.html" class="btn btn-gray btn-block view-cart">View
+                        <a href="{{ url('/carts/index') }}" class="btn btn-gray btn-block view-cart">View
                             Cart</a>
-                        <a href="checkout.html" class="btn btn-dark btn-block">Checkout</a>
+                        <a href="{{ url('/checkouts/index') }}" class="btn btn-dark btn-block">Checkout</a>
                     </div>
                     <!-- End .dropdown-cart-total -->
                 </div>

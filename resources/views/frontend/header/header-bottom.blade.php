@@ -5,7 +5,7 @@
                 <a href="demo4.html">Home</a>
             </li>
             <li>
-                <a href="{{ url('/user/categories/index') }}">Categories</a>
+                <a href="{{ url('/categories/index') }}">Categories</a>
                 <div class="megamenu megamenu-fixed-width megamenu-3cols">
                     <div class="row">
                         <div class="col-lg-4">
@@ -60,7 +60,7 @@
                 <!-- End .megamenu -->
             </li>
             <li>
-                <a href="product.html">Products</a>
+                <a href="{{ url('/products/index') }}">Products</a>
                 <div class="megamenu megamenu-fixed-width">
                     <div class="row">
                         <div class="col-lg-4">
@@ -96,7 +96,7 @@
                         <div class="col-lg-4 p-0">
                             <div class="menu-banner menu-banner-2">
                                 <figure>
-                                    <img src="assets/images/menu-banner-1.jpg" width="182" height="317"
+                                    <img src="{{ asset('assets/images/menu-banner-1.jpg') }}" width="182" height="317"
                                         alt="Menu banner" class="product-promo">
                                 </figure>
                                 <i>OFF</i>
@@ -115,51 +115,11 @@
                 </div>
                 <!-- End .megamenu -->
             </li>
-            <li>
-                <a href="#">Pages</a>
-                <ul>
-                    <li><a href="wishlist.html">Wishlist</a></li>
-                    <li><a href="cart.html">Shopping Cart</a></li>
-                    <li><a href="checkout.html">Checkout</a></li>
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="#">Blog</a>
-                        <ul>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="single.html">Blog Post</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="forgot-password.html">Forgot Password</a></li>
-                </ul>
-            </li>
-            <li><a href="blog.html">Blog</a></li>
-            <li>
-                <a href="#">Elements</a>
-                <ul class="custom-scrollbar">
-                    <li><a href="element-accordions.html">Accordion</a></li>
-                    <li><a href="element-alerts.html">Alerts</a></li>
-                    <li><a href="element-animations.html">Animations</a></li>
-                    <li><a href="element-banners.html">Banners</a></li>
-                    <li><a href="element-buttons.html">Buttons</a></li>
-                    <li><a href="element-call-to-action.html">Call to Action</a></li>
-                    <li><a href="element-countdown.html">Count Down</a></li>
-                    <li><a href="element-counters.html">Counters</a></li>
-                    <li><a href="element-headings.html">Headings</a></li>
-                    <li><a href="element-icons.html">Icons</a></li>
-                    <li><a href="element-info-box.html">Info box</a></li>
-                    <li><a href="element-posts.html">Posts</a></li>
-                    <li><a href="element-products.html">Products</a></li>
-                    <li><a href="element-product-categories.html">Product Categories</a></li>
-                    <li><a href="element-tabs.html">Tabs</a></li>
-                    <li><a href="element-testimonial.html">Testimonials</a></li>
-                </ul>
-            </li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li class="float-right"><a href="https://1.envato.market/DdLk5" rel="noopener" class="pl-5"
+            <li><a href="{{ url('/blogs/index') }}">Blog</a></li>
+            <li><a href="{{ url('/contacts/index') }}">Contact Us</a></li>
+            <!-- <li class="float-right"><a href="https://1.envato.market/DdLk5" rel="noopener" class="pl-5"
                     target="_blank">Buy Porto!</a></li>
-            <li class="float-right"><a href="#" class="pl-5">Special Offer!</a></li>
+            <li class="float-right"><a href="#" class="pl-5">Special Offer!</a></li> -->
         </ul>
     </nav>
 </div>

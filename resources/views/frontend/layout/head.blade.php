@@ -9,8 +9,8 @@
 <meta name="author" content="SW-THEMES">
 
 <!-- Favicon -->
-<link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.png">
-<script>
+<link rel="icon" type="image/x-icon" href="{{ asset('assets/images/icons/favicon.png')}}">
+<!-- <script>
     WebFontConfig = {
         google: {
             families: ['Open+Sans:300,400,600,700,800', 'Poppins:300,400,500,600,700,800',
@@ -25,7 +25,7 @@
         wf.async = true;
         s.parentNode.insertBefore(wf, s);
     })(document);
-</script>
+</script> -->
 
 <!-- Plugins CSS File -->
 <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
