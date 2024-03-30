@@ -2,7 +2,7 @@
     <nav class="main-nav w-100">
         <ul class="menu">
             <li class="active">
-                <a href="demo4.html">Home</a>
+                <a href="{{ url('/') }}">Home</a>
             </li>
             <li>
                 <a href="{{ url('/categories/index') }}">Categories</a>

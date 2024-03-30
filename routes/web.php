@@ -2,8 +2,33 @@
 
 use Illuminate\Support\Facades\Route;
 
+// List Backend Routes
+
+Route::prefix('admins')->group(function () {
+    Route::get('/', function () {
+        return view('backend.dashboard');
+    });
+
+    Route::get('/login', function () {
+        return view('backend.pages.auth.login');
+    });
+
+    Route::get('/products/index', function () {
+        return view('backend.pages.products.index');
+    });
+
+    Route::get('/products/create', function () {
+        return view('backend.pages.products.create');
+    });
+});
+
+
+
+
+// List Frontend Routes
+
 Route::get('/', function () {
-    return view('dashboard');
+    return view('frontend.dashboard');
 });
 
 Route::get('/categories/index', function () {

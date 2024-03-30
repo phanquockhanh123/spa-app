@@ -13,7 +13,7 @@
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="wishlist.html">My Wishlist</a></li>
-                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="{{ url('/carts/index') }}">Cart</a></li>
                     <li><a href="login.html" class="login-link">Log In</a></li>
                 </ul>
             </div>
